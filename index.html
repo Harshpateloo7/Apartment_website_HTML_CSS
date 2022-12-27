@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Author: Harshadkumar Patel, 000852665-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sandy and Leslie's Apartment</title>
+	<link rel="stylesheet" type="text/css" href="css/apartment_layout.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/print.css">
+	<style type="text/css">
+		.line {
+			border-right: 1px solid black;
+			padding: 2px;
+			margin: 3px;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Sandy and Leslie's Apartment</h1>
+		<p>click a room for detailled view</p>
+		<img src="images/apartmentfloorplan.jpg" alt="apartmentfloorplan" id="floorplan" usemap="#floorplan">
+		<map name="floorplan">
+			<!--for rectangle coords="topLeftbedroom1"  -->
+			<area shape="rect" coords="45,3,211,159" href="bedroom1.html">
+			<!-- for round rectangle coords="livingroom" -->
+			<area shape="roundrect" coords="217,10,395,158" href="livingroom.html">
+			<!-- for round rectangle coords="Kitchen" -->
+			<area shape="rect" coords="231,243,405,296" href="Kitchen.html">
+			<!-- for round circle coords="dinigroom" -->
+			<area shape="circle" coords="519,221,221" href="diningroom.html">
+			<!-- for round rect coords="bedroom" -->
+			<area shape="rectangle" coords="594,280,419,464" href="bedroom2.html">
+
+		</map>
+		<div class="navbar">
+			<nav>
+				<ul>
+					<li><a href="index.html" class="line">Apartment</a></li>
+					<li><a href="bedroom1.html" class="line">Bedroom 1</a></li>
+					<li><a href="bedroom2.html" class="line">Bedroom 2</a></li>
+					<li><a href="diningroom.html" class="line">Dining Room</a></li>
+					<li><a href="kitchen.html" class="line">Kitchen</a></li>
+					<li><a href="livingroom.html">Living Room</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="map">
+			<h2>Location</h2>
+			<img src="images/location.png">
+		</div>
+		<div class="service">
+			<h2>Apartment service:</h2>
+			<table class="timetable">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Day/Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Gym</th>
+						<td rowspan="2">Monday-friday 6am - 10pm</br>Saturday 8am - 8pm</br>Sunday 8am -5pm</td>
+					</tr>
+					<tr>
+						<th>Pool</th>
+
+					</tr>
+					<tr>
+						<th>Laundry</th>
+						<td>24/7</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="caption">Please do not allow people you do not know to use these
+							facilities.</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+		</div>
+		<div class="third">
+			<div class="msg">
+				<h2>Welcome Message</h2>
+				<audio controls autoplay muted>
+					<source src="images/apartment.mp3" type="audio/mpeg">
+				</audio>
+				<p>Transcript: Hello, Welcome to our apartment. You 'll really enjoy living here. The rooms are spacious
+					and the apartment building amenities are fantastic. We look forward to hearing from you!</p>
+			</div>
+
+			<form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+				<div class="survey">
+					<h2>Survey</h2>
+					<p>How did you find out about this apartment? Check any that apply:</p>
+					<fieldset>
+						<div>
+							<input type="checkbox" name="wsearch" id="web" value="Web Search">
+							<label for="web">Web Search</label>
+							<input type="checkbox" name="friend" id="f" value="friend">
+							<label for="f">Friend</label>
+							<input type="checkbox" name="Newspaper" id="news" value="News Paper">
+							<label for="news">News Paper</label>
+						</div>
+					</fieldset>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Rest Form">
+				</div>
+			</form>
+		</div>
+	</main>
+	<h2>Gallery</h2>
+	<div class="gallery">
+		<section class="aprtgallery">
+			<div class="photos">
+				<h3>Balcony</h3>
+				<img src="images/thumbnails/balcony_sm.jpg" alt="balcony">
+			</div>
+		</section>
+		<section class="aprtgallery">
+
+		</section>
+
+		<div class="photos">
+			<h3>Bathroom</h3>
+			<img src="images/thumbnails/bathroom_sm.jpg" alt="bathroom">
+		</div>
+		<section class="aprtgallery">
+			<div class="photos">
+				<h3>Bedroom</h3>
+				<img src="images/thumbnails/bedroom_sm.jpg" alt="bedroom">
+			</div>
+		</section>
+
+		<section class="aprtgallery">
+			<div class="photos">
+				<h3>Dining Room</h3>
+				<img src="images/thumbnails/diningroom_sm.jpg" alt="diningroom">
+			</div>
+		</section>
+
+		<section class="aprtgallery">
+			<div class="photos">
+				<h3>Kitchen</h3>
+				<img src="images/thumbnails/kitchen_sm.jpg" alt="kitchen">
+			</div>
+		</section>
+
+		<section class="aprtgallery">
+			<div class="photos">
+				<h3>Living Room</h3>
+				<img src="images/thumbnails/livingroom_sm.jpg" alt="livingroom">
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div>
+			<p>For more information contact:<a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a>
+				or <a href="Tel:(905)555-1234">(905)555-1234</a></br>&copy;Sandy and Leslie 2020</p>
+
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>

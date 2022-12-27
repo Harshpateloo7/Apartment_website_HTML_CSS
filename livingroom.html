@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- Author: Harshadkumar Patel, 000852665-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sandy and Leslie's Apartment</title>
+
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			margin-left: 5em;
+			margin-right: 5em;
+		}
+
+		h1 {
+			text-align: center;
+			font-family: "black Calibri";
+		}
+
+		h2 {
+			background-color: #FFD500;
+			height: 45px;
+
+		}
+
+		.line {
+			border-right: 2px solid blue;
+			padding: 1px;
+
+		}
+
+		header {
+			text-align: center;
+		}
+
+		.navbar li {
+			display: inline;
+			padding: 5px;
+			text-decoration: none;
+		}
+
+		main {
+			display: grid;
+			grid-template-areas: "header "
+				"footer";
+			grid-template-columns: 100%;
+			grid-gap: 10px;
+			padding: 0 10px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		table.timetable {
+			border: 1px solid black;
+			border-collapse: collapse;
+			width: 40%;
+			justify-self: center;
+		}
+
+		table.timetable th,
+		table.timetable td {
+			border: 1px solid black;
+			padding: 5px;
+			vertical-align: middle;
+			height: 100%;
+
+		}
+
+		thead th {
+			background-color: #CCC0CA;
+		}
+
+		.caption {
+			background-color: #B8F5DD;
+		}
+
+		footer {
+			margin: 0;
+			padding: 0;
+			margin-left: 1em;
+			margin-right: 1em;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Sandy and Leslie's Apartment</h1>
+		<p>click a room for detailled view</p>
+		<img src="images/apartmentfloorplan.jpg" alt="apartmentfloorplan" id="floorplan" usemap="#floorplan">
+		<map name="floorplan">
+			<!--for rectangle coords="topLeftbedroom1"  -->
+			<area shape="rect" coords="45,3,211,159" href="bedroom1.html">
+			<!-- for round rectangle coords="livingroom" -->
+			<area shape="roundrect" coords="217,10,395,158" href="livingroom.html">
+			<!-- for round rectangle coords="Kitchen" -->
+			<area shape="rect" coords="231,243,405,296" href="Kitchen.html">
+			<!-- for round circle coords="dinigroom" -->
+			<area shape="circle" coords="473,218,224" href="diningroom.html">
+			<!-- for round rect coords="bedroom" -->
+			<area shape="rect" coords="45,3,211,159" href="bedroom 2.html">
+		</map>
+		<div class="navbar">
+			<nav>
+				<ul>
+					<li><a href="index.html" class="line">Apartment</a></li>
+					<li><a href="bedroom1.html" class="line">Bedroom 1</a></li>
+					<li><a href="bedroom2.html" class="line">Bedroom 2</a></li>
+					<li><a href="diningroom.html" class="line">Dining Room</a></li>
+					<li><a href="kitchen.html" class="line">Kitchen</a></li>
+					<li><a href="livingroom.html">Living Room</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="center">
+			<h2>Living Room</h2>
+			<img src="images/livingroom_lg.jpg">
+		</div>
+		<div class="service">
+			<h2>Apartment service:</h2>
+			<table class="timetable">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Day/Hours</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Gym</th>
+						<td rowspan="2">Monday-friday 6am - 10pm</br>Saturday 8am - 8pm</br>Sunday 8am -5pm</td>
+					</tr>
+					<tr>
+						<th>Pool</th>
+
+					</tr>
+					<tr>
+						<th>Laundry</th>
+						<td>24/7</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="caption">Please do not allow people you do not know to use these
+							facilities.</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<p>For more information contact:<a href="mailto:SandyAndLeslie@example.com">SandyAndLeslie@example.com</a>
+				or <a href="Tel:(905)555-1234">(905)555-1234</a></br>&copy;Sandy and Leslie 2020</p>
+
+		</div>
+	</footer>
+
+</body>
+
+</html>

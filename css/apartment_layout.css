@@ -1,0 +1,80 @@
+/*Author: Harshadkumar Patel, 000852665*/
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	margin-left: 5em;
+	margin-right: 5em;
+}
+h1{
+	text-align: center;
+	font-family: "black Calibri"  ;
+}
+h2{
+	background-color: #FFD500;
+	text-align: left;
+	height: auto;
+}
+h3{
+	background-color: #EB571C;
+	color: white;
+	height: auto;
+
+}
+header{
+	text-align: center;
+}
+.navbar li{
+	display:inline;
+	padding: 5px;
+	text-decoration:none;
+}
+main{
+	display: grid;
+	grid-template-areas: "header header header"
+						"footer footer footer";
+	grid-template-columns: 23% 30% 40%;
+	grid-gap: 30px;
+	padding: 0 20px;
+}
+table.timetable{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.timetable th, table.timetable td{
+	border:1px solid black;
+	padding: 5px;
+	vertical-align: middle;
+	height: 100%;
+
+}
+thead th{
+	background-color: #CCC0CA;
+}
+.caption{
+	background-color: #B8F5DD;
+}
+.gallery{
+	display: flex;
+	flex-flow: row wrap;
+	text-align: left;
+}
+.aprtgallery{
+	flex: 0 auto;
+}
+.photos{
+	flex:0 auto;
+	margin: 5px;
+	padding: 10px;
+}
+.survey{
+	display: inline;
+	border: none;
+}
+header{
+
+}
+footer{
+	text-align: center;
+}
